@@ -1,6 +1,6 @@
 <?php
 $nama = 'Ahmad';
-$nama2 = "karta";
+$nama2 = "Karta";
 $pesan = "selamat datang {$nama}";
 $pesan2 = "selamat datang {$nama2}";
 ?>
