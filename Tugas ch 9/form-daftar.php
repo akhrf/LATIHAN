@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pendaftaran Mahasiswa Baru | ULBI</title>
 </head>
 <body>
     <header>
-        <h3>Formulir Pendaftaran Mahasiswa Baru | Poltekpos</h3>
+        <h3>Formulir Pendaftaran Mahasiswa Baru | ULBI</h3>
     </header>
 
-    <form action="proses-pendaftaran.php">
+    <form action="proses-daftar.php" method="post">
         <fieldset>
             <p>
                 <label for="nama">Nama: </label>
@@ -18,29 +18,29 @@
             </p>
             <p>
                 <label for="alamat">Alamat: </label>
-                <textarea name="alamat"></textarea>
+                <textarea name="alamat" id="alamat" cols="30" rows="10"></textarea>
             </p>
             <p>
-                <label for="jenis kelamin">Jenis Kelamin</label>
-                <label><input type="radio" name="jenis_kelamin" value="laki-laki">Laki-Laki</label>
-                <label><input type="radio" name="jenis_kelamin" value="perempuan">Perempuan</label>
+                <label for="jenis_kelamin">Jenis Kelamin: </label>
+                <label><input type="radio" name="jenis_kelamin" value="Laki-laki">Laki-laki</label>
+                <label><input type="radio" name="jenis_kelamin" value="Perempuan">Perempuan</label>
             </p>
             <p>
                 <label for="agama">Agama: </label>
-                <select name="agama">
-                    <option>Islam</option>
-                    <option>Hindu</option>
-                    <option>Budha</option>
-                    <option>Kristen</option>
-                    <option>Atheis</option>
+                <select name="agama" id="agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                    <option value="Atheis">Atheis</option>
                 </select>
             </p>
             <p>
                 <label for="sekolah_asal">Sekolah Asal: </label>
-                <input type="text" name="sekolah_asal" id="nama sekolah">
+                <input type="text" name="sekolah_asal" placeholder="Nama Sekolah">
             </p>
             <p>
-                <input type="submit" name="daftar" id="daftar">
+                <input type="submit" value="Daftar" name="daftar">
             </p>
         </fieldset>
     </form>
