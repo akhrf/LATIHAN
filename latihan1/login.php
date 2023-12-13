@@ -8,7 +8,7 @@ $db_pass = 'password';
 $db_name = 'database';
 
 // Koneksi ke database
-$conn = new mysqli($db_host, $db_user, $db_pass, $db_name);
+$conn =new mysqli($db_host, $db_user, $db_pass, $db_name);
 
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
